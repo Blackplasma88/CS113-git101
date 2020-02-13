@@ -1,0 +1,26 @@
+loop-while and loop-for
+
+loop หรือก็คือ การทำงานซ้ำ โดย loop ในที่นี้จะทำการทำงานโค็ดชุดนึงซ้ำจนกว่า
+จะหลุดจากเงื่อนไข
+
+while loop สามารถเขียนได้โดย
+while(expression){
+    statement
+}
+loop นี้จะทำงานในขณะที่ expression เป็นจริงและจบการทำงานเมื่อเป็นเท็จ
+ให้นึกถึง if ที่มีการทำซ้ำจนกว่า expression จะเป็นเท็จ
+
+for loop สามารถเขียนได้โดย
+for(จุดเริ่ม;เงื่อนไข;การเปลี่ยนแปลง){
+    statement
+}
+ลักษณะการใช้งานจะคล้ายกันกับ loop while 
+
+loop do-while จะคล้ายกันกับ loop while แต่จะทำ statement ก่อนแล้วค่อยไป
+เช็ค expression เขียนได้โดย
+do{
+    statement
+}while(expression);
+ 
+break ใช้ในการหยุด loop
+continue ใช้ในการข้ามการทำงานในหนึ่งรอบนั้นๆ
