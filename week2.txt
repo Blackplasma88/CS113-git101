@@ -1,0 +1,31 @@
+ในการใช้งานตัวแปร จำเป็นต้องประกาศตัวแปรก่อนใช้งานและระบุ type ของตัวแปรนั้นๆ
+เช่น int number; char a; เป็นต้น
+ส่วนแรกจะเป็น type ของตัวแปร และส่วนหลังจะเป็นชื่อตัวแปรแล้วจบด้วย ;
+
+ประเภทของตัวแปร ตัวอย่าง เช่น
+Char   เก็บข้อมูลอักขระแบบไม่คิดเครื่องหมาย
+Int	   เก็บข้อมูลชนิดจำนวนเต็ม
+long   เก็บข้อมูลชนิดจำนวนเต็มแบบยาว
+Float  เก็บข้อมูลชนิดเลขทศนิยม
+Double เก็บข้อมูลชนิดเลขทศนิยม
+Unsigned int  เก็บข้อมูลชนิดจำนวนเต็ม ไม่คิดเครื่องหมาย
+
+#define เป็นการกำหนดค่านั้นๆเหมือนการกำหนดค่าคงที่
+
+ตัวดำเนินการ
+Assignment operator หรือ =
+Arithmetic operators +, -, *, /, %
+Compound assignment +=, -=, *=, /=, %=
+Increment and decrement ++, --
+Relational Operators ==, !=, >, <, >=, <= 
+Logical operators !, &&, || 
+Bitwise operators &, |, ^, ~, <<, >>
+
+
+argument คือ operator
+unary operator คือ operator ที่ทำกับ 1 operan เช่น *,++
+
+ใน stdio.h
+การรับ input ทำได้เช่น
+gets();
+fgeats(name,size,stdin);
