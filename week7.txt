@@ -1,0 +1,27 @@
+pointer นั้นเป็นตัวชี้ซึ่ง array ก็เป็น pointer ด้วย เพราะว่า ตัวแปร array นั้น 
+จะเก็บค่า address ของตำแหน่งแรกหรือ array[0] เอาไว้นั่นเอง
+
+เมื่อใช้ pointer กับฟังก์ชันแล้ว ในการส่งผ่านค่านั้น จะเป็นการส่ง address ไป และเมื่อ 
+ทำการแก้ค่าในตัวแปรที่ส่งผ่านไป ค่าจะเปลี่ยนแปลง ไม่เหมือนกับการส่ผ่านค่าแบบปกติหรือ cxll by value
+เราเรียกการส่งผ่านค่านี้ว่า call by reference
+เราสามารถกำหนกให้ pointer เป็นค่า const ได้
+
+ตัวอย่าง
+
+void squareByValue(int val){  //call by value
+val = val * val;
+}
+void squareByReference(int *val){  //call by reference
+*val = *val * *val;
+}
+
+main{ 
+    int a = 3;
+    int b = 4;
+    printf("a = %d\n", a);
+    squareByValue(a);
+    printf("squareByValue(a) = %d\n\n", a);
+    printf("b = %d\n", b);
+    squareByReference(&b);
+    printf("squareByReference(&b) = %d\n", b);
+}
