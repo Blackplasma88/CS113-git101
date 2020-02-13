@@ -1,0 +1,35 @@
+if-else หรือ เงื่อนไข
+
+expression หรือเงื่อนไข
+{} คือ บล็อคที่รวบรวม statement หลายๆอันไว้ด้วยกัน
+
+มีวิธีการเขียนคือ
+if(expression){
+    statement1
+}else{
+    statement2
+}
+
+เมื่อทำการรัน โปรแกรมจะทำการเช็คใน expression หากเป็นจริงจะทำ statement
+ใน if หากเป็นเท็จ จะทำ statement ใน else
+
+หากมีเงื่อนไขมากกว่าหนึ่งสามารถเขียนได้โดย
+if(expression1){
+    statement1
+}else if(expression2){
+    statement2
+}else{
+    statement3
+}
+
+โดยสามารถเพิ่ม else if เท่าไรก็ได้ โดยโปรแกรมจะเช็คเงื่อนไขจากบนลงล่าง
+
+switch จะคล้ายกับ if โดยจะมีวิธีเขียนดังนี้
+switch (expression) {
+    case const-expr:
+        statements;break;
+    case const-expr:
+        statements;break;
+    default:
+        statements;
+}
